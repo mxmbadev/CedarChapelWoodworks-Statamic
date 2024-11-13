@@ -1,8 +1,25 @@
 ---
-title: Home
 id: home
+blueprint: homepage
+title: Home
 template: home
-blueprint: pages
+hero_buttons:
+  -
+    id: m3f84ve2
+    hero_button_text: 'Recent Projects'
+    hero_button_url: '#our-work'
+    type: new_set
+    enabled: true
+  -
+    id: m3f8614k
+    hero_button_text: 'Contact Us'
+    hero_button_url: '#contact-us'
+    type: new_set
+    enabled: true
+updated_by: e140f39d-d1d3-46f7-9110-d69a85e4c78a
+updated_at: 1731464866
+hero_title: 'Welcome to Cedar Chapel Woodworks'
+hero_background_image: homepage/hero/studiobank.jpg
 ---
 ## Welcome to your brand new Statamic site!
 

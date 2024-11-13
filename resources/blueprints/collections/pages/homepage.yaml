@@ -1,0 +1,88 @@
+title: Homepage
+tabs:
+  Hero:
+    display: Hero
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: hero_title
+            field:
+              antlers: true
+              type: text
+              display: 'Hero Title'
+          -
+            handle: hero_buttons
+            field:
+              type: replicator
+              display: 'Hero Buttons'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: hero_button_text
+                          field:
+                            antlers: true
+                            type: text
+                            display: 'Hero Button Text'
+                            width: 50
+                        -
+                          handle: hero_button_url
+                          field:
+                            antlers: true
+                            type: text
+                            display: 'Hero Button URL'
+                            width: 50
+          -
+            handle: hero_background_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Hero Background Image'
+  our_work:
+    display: 'Our Work'
+    sections:
+      -
+        display: 'New Section'
+  about_us:
+    display: 'About Us'
+    sections:
+      -
+        display: 'New Section'
+  contact_us:
+    display: 'Contact Us'
+    sections:
+      -
+        display: 'New Section'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

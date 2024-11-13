@@ -1,4 +1,73 @@
 /* resources/css/app.css */
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
-/* This is all you. */
+/* Global Styles */
+:root {
+    --main-red-color: #B22222;
+    --light-gray: #dedede;
+    --nav-text-color: #fff;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1440px !important;
+    }
+}
+
+.title-style {
+    h2 {
+        font-size: 30px;
+        margin-top: 3em;
+        margin-bottom: 0px;
+        color: var(--main-red-color);
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 40px;
+        font-weight: 100;
+        margin-bottom: 1em;
+    }
+}
+
+
+
+.btn-cta {
+    color: #fff;
+    background-color: var(--main-red-color);
+    margin-top: 10px;
+    border-radius: 0px;
+
+    &:hover {
+        color: #fff;
+        background-color: #212120;
+    }
+}
+
+
+.btn-alt {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    border-width: 2px;
+    border-radius: 0px;
+
+    &:hover {
+        border-color: #d4d6d5;
+        color: #d4d6d5;
+    }
+}
+
+
+/* HOMEPAGE  */
+#hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 325px 0;
+    color: #fff;
+    h1 {
+        color: #fff;
+        font-size: 75px;
+    }
+}
