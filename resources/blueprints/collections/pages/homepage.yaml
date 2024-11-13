@@ -56,16 +56,114 @@ tabs:
     sections:
       -
         display: 'New Section'
+        fields:
+          -
+            handle: our_work_title
+            field:
+              antlers: true
+              type: text
+              display: 'Our Work Title'
+              width: 50
+          -
+            handle: our_work_subtitle
+            field:
+              antlers: true
+              type: text
+              display: 'Our Work Subtitle'
+              width: 50
+          -
+            handle: our_work_button_text
+            field:
+              antlers: true
+              type: text
+              display: 'Our Work Button Text'
+              width: 50
+          -
+            handle: our_work_button_url
+            field:
+              type: text
+              display: 'Our Work Button URL'
+              width: 50
   about_us:
     display: 'About Us'
     sections:
       -
         display: 'New Section'
+        fields:
+          -
+            handle: about_title
+            field:
+              antlers: true
+              type: text
+              display: 'About Title'
+              width: 50
+          -
+            handle: about_subtitle
+            field:
+              antlers: true
+              type: text
+              display: 'About Subtitle'
+              width: 50
+          -
+            handle: about_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'About Image'
+          -
+            handle: about_paragraph
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'About Paragraph'
+          -
+            handle: about_button_text
+            field:
+              antlers: true
+              type: text
+              display: 'About Button Text'
+              width: 50
+          -
+            handle: about_button_url
+            field:
+              antlers: true
+              type: text
+              display: 'About Button URL'
+              width: 50
   contact_us:
     display: 'Contact Us'
     sections:
       -
         display: 'New Section'
+        fields:
+          -
+            handle: contact_us_title
+            field:
+              antlers: true
+              type: text
+              display: 'Contact Us Title'
+              width: 50
+          -
+            handle: contact_us_subtitle
+            field:
+              antlers: true
+              type: text
+              display: 'Contact Us Subtitle'
+              width: 50
+          -
+            handle: contact_us_description
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Contact Us Description'
+          -
+            handle: contact_us_background_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Contact Us Background Image'
   sidebar:
     display: Sidebar
     sections:

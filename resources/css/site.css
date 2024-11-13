@@ -71,3 +71,44 @@
         font-size: 75px;
     }
 }
+
+section#about-us {
+    background-color: var(--light-gray);
+    padding: 6em 0;
+    color: #000;
+
+    .title-style {
+        h2 {
+            margin-top: 0px;
+        }
+    }
+    #about_bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 30%;
+        min-height: 400px;
+    }
+    @media (max-width: 991px) {
+        padding-bottom: 0px !important;
+
+        #about_bg {
+            margin-top: 2em;
+        }
+    }
+    @media (min-width: 992px) {
+        .col-lg-8,
+        .col-xs-12:nth-child(2) {
+            padding-left: 100px;
+        }
+    }
+}
+
+section#contact-us {
+    .col-lg-6,
+    col-xs-12:last-child {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 400px;
+    }
+}

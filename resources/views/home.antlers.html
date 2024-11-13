@@ -6,3 +6,71 @@
         {{ /hero_buttons }}
     </div>
 </section>
+<section id="recent-work">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 title-style">
+                <h2>{{ our_work_title }}</h2>
+                <h3>{{ our_work_subtitle }}</h3>
+            </div>
+            <div class="col-12 mt-3">
+                <a href="{{ our_work_button_url }}" class="btn btn-cta">{{ our_work_button_text }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about-us">
+    <div class="container">
+        <div class="row">
+            <div id="about_bg" class="col-lg-4 col-xs-12 order-2 order-lg-1" style="background-image: url('{{ about_image }}');"></div>
+            <div class="col-lg-8 col-xs-12 order-1 order-lg-2">
+                <div class="title-style">
+                    <h2>{{ about_title }}</h2>
+                    <h3>{{ about_subtitle }}</h3>
+                </div>
+                {{ about_paragraph }}
+                <a href="{{ about_button_url }}" class="btn btn-cta">{{ about_button_text }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact-us" class="pb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-style">
+                    <h2>{{ contact_us_title }}</h2>
+                    <h3>{{ contact_us_subtitle }}</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-xs-12">
+                        {{ contact_us_description }}
+                        <form class="contactForm pt-5">
+                            <div class="mb-3">
+                                <input class="form-control" type="text" placeholder="Your Name"
+                                    aria-label="default input example">
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-control" type="text" placeholder="Your Email"
+                                    aria-label="default input example">
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-control" type="text" placeholder="Your Phone"
+                                    aria-label="default input example">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                    placeholder="Additional Information" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <a href="" class="btn btn-cta">Submit</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 offset-lg-1" style="background-image: url('{{ contact_us_background_image }}');">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
