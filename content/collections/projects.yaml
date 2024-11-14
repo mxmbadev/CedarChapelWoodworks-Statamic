@@ -1,0 +1,7 @@
+title: Projects
+template: projects/show
+route: /my_work/{slug}
+revisions: false
+date_behavior:
+  past: public
+  future: private

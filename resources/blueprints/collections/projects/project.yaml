@@ -1,0 +1,64 @@
+title: Project
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: cover_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Cover Image'
+              width: 50
+              folder: projects/cover-images
+              restrict: true
+          -
+            handle: project_hero_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Project Hero Image'
+              width: 50
+              folder: projects
+          -
+            handle: project_gallery_images
+            field:
+              type: replicator
+              display: 'Project Gallery Images'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: gallery_image
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: 'Gallery Image'
+                            folder: projects
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
