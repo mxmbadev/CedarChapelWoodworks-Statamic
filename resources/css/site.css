@@ -6,6 +6,42 @@
     --main-red-color: #B22222;
     --light-gray: #dedede;
     --nav-text-color: #fff;
+    --project-modal-width: fit-content !important;
+}
+
+
+nav.navbar {
+    padding: 0px; 
+    .navbar-brand {
+        color: var(--nav-text-color);
+    }
+    .nav-item {
+        color: var(--nav-text-color);
+        .nav-link { padding: 20px; color: var(--nav-text-color); }
+    }
+    &.scrolled {
+        background-color: var(--nav-text-color);
+        box-shadow: var(--light-gray) 0px 0px 8px 0px;
+        .navbar-brand {
+            color: #000;
+        }
+        .nav-item {
+            .nav-link { color: #000; }
+            &:last-child {
+                background-color: var(--main-red-color);
+                .nav-link { color: var(--nav-text-color); }
+
+                &:hover {
+                    background-color: var(--main-red-color);
+                    color: var(--nav-text-color);
+                }
+            }
+            .nav-link:hover {
+                background-color: var(--main-red-color);
+                color: var(--nav-text-color);
+            }
+        }
+    }
 }
 
 @media (min-width: 1400px) {
@@ -37,10 +73,11 @@
     background-color: var(--main-red-color);
     margin-top: 10px;
     border-radius: 0px;
-
+    transition: all ease-in-out .3s;
     &:hover {
         color: #fff;
         background-color: #212120;
+        transition: all ease-in-out .3s;
     }
 }
 
@@ -51,10 +88,12 @@
     border-color: #fff;
     border-width: 2px;
     border-radius: 0px;
-
+    transition: all ease-in-out .3s;
     &:hover {
-        border-color: #d4d6d5;
-        color: #d4d6d5;
+        border-color: #fff;
+        background-color: #fff;
+        color: #000;
+        transition: all ease-in-out .3s;
     }
 }
 
@@ -201,6 +240,10 @@ section#projects-hero {
     }
   }
   
+  .projectImageModal {
+    .modal-body { padding: 0px; }
+    .modal-dialog { max-width: var(--project-modal-width); }
+  }
 
 section#contact_banner {
     background-repeat: no-repeat;
@@ -243,5 +286,15 @@ section#project-photos {
         background-position: center;
         background-size: cover;
         padding: 175px 0;
+    }
+}
+
+/* Footer */
+section#footer {
+    background-color: var(--main-red-color);
+    color: #fff;
+
+    a {
+        color: #fff;
     }
 }

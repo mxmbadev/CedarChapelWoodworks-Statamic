@@ -7,7 +7,7 @@ hero_buttons:
   -
     id: m3f84ve2
     hero_button_text: 'Recent Projects'
-    hero_button_url: '#our-work'
+    hero_button_url: '#recent-work'
     type: new_set
     enabled: true
   -
@@ -17,7 +17,7 @@ hero_buttons:
     type: new_set
     enabled: true
 updated_by: e140f39d-d1d3-46f7-9110-d69a85e4c78a
-updated_at: 1731467057
+updated_at: 1731644599
 hero_title: 'Welcome to Cedar Chapel Woodworks'
 hero_background_image: homepage/hero/studiobank.jpg
 our_work_title: 'Our Work'
