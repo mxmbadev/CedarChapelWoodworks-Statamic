@@ -1,6 +1,6 @@
 title: Projects
 template: projects/show
-route: /my_work/{slug}
+route: /projects/{slug}
 revisions: false
 date_behavior:
   past: public

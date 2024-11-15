@@ -1,0 +1,43 @@
+<section id="projects-hero"
+    style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ hero_image }}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1>{{ project_hero_title }}</h1>
+                <h2>{{ project_hero_subtitle }}</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="pt-5 mt-3">
+    <div class="container">
+        <div class="row">
+            {{ collection:projects }}
+            <div class="col-xl-4 col-md-6 col-xs-12 pb-4 mb-2">
+                <a href="{{ url }}" class="project-link">
+                    <div class="image-container">
+                        <img class="img-fluid project-image" src="{{ cover_image }}" alt="{{ alt }}">
+                        <div class="overlay">
+                            <h2 class="title-overlay">{{ title | widont }}</h2>
+                            <button class="view-project-btn btn-alt btn">View Project</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{ /collection:projects }}
+        </div>
+    </div>
+</section>
+
+<section id="contact_banner"
+    style="background-image: linear-gradient(0deg, rgb(178, 34, 34, .7), rgb(178, 34, 34, .7)), url('{{ banner_background_image }}');">
+    <div class="container-fluid">
+        <div class="row text-center mt-4">
+            <div class="col-12">
+                <h2>{{ banner_title }}</h2>
+                <a href="/" class="btn btn-alt">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -51,6 +51,23 @@ tabs:
                             type: assets
                             display: 'Gallery Image'
                             folder: projects
+      -
+        display: 'Contact Us Banner'
+        fields:
+          -
+            handle: contact_banner_background
+            field:
+              max_files: 1
+              container: assets
+              folder: projects
+              type: assets
+              display: 'Contact Us Banner Background Image'
+          -
+            handle: contact_us_banner_title
+            field:
+              antlers: true
+              type: text
+              display: 'Contact Us Banner Title'
   sidebar:
     display: Sidebar
     sections:

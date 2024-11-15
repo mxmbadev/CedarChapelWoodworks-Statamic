@@ -1,0 +1,75 @@
+title: 'Project Landing Page'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: Hero
+        fields:
+          -
+            handle: project_hero_title
+            field:
+              antlers: true
+              type: text
+              display: 'Project Hero Title'
+              width: 50
+          -
+            handle: hero_image
+            field:
+              container: assets
+              folder: projects
+              type: assets
+              display: 'Hero Image'
+              width: 50
+              max_files: 1
+          -
+            handle: project_hero_subtitle
+            field:
+              antlers: true
+              type: text
+              display: 'Project Hero Subtitle'
+              width: 50
+      -
+        display: 'Contact Us Banner'
+        fields:
+          -
+            handle: banner_background_image
+            field:
+              max_files: 1
+              container: assets
+              folder: projects
+              type: assets
+              display: 'Banner Background Image'
+          -
+            handle: banner_title
+            field:
+              antlers: true
+              type: text
+              display: 'Banner Title'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
