@@ -14,10 +14,12 @@ nav.navbar {
     padding: 0px; 
     .navbar-brand {
         color: var(--nav-text-color);
+        img { max-width: 150px !important; }
     }
     .nav-item {
         color: var(--nav-text-color);
-        .nav-link { padding: 20px; color: var(--nav-text-color); }
+        .nav-link { padding: 29px 20px; color: var(--nav-text-color); font-size: 20px; transition: all ease-in-out .2s; 
+            &:hover{ font-weight: 700; transition: all ease-in-out .2s;} }
     }
     &.scrolled {
         background-color: var(--nav-text-color);
@@ -26,7 +28,7 @@ nav.navbar {
             color: #000;
         }
         .nav-item {
-            .nav-link { color: #000; }
+            .nav-link { color: #000; transition: all ease-in-out .2s; }
             &:last-child {
                 background-color: var(--main-red-color);
                 .nav-link { color: var(--nav-text-color); }
@@ -39,6 +41,8 @@ nav.navbar {
             .nav-link:hover {
                 background-color: var(--main-red-color);
                 color: var(--nav-text-color);
+                font-weight: 700;
+                transition: all ease-in-out .2s;
             }
         }
     }

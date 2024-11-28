@@ -1,7 +1,7 @@
 <section id="hero"
     style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('{{ hero_background_image }}')">
     <div class="container">
-        <h1>{{ hero_title }}</h1>
+        {{# <h1>{{ hero_title }}</h1> #}}
         {{ hero_buttons }}
         <a href="{{ hero_button_url }}" class="btn btn-alt me-2">{{ hero_button_text }}</a>
         {{ /hero_buttons }}
@@ -12,7 +12,9 @@
         <div class="row">
             <div class="col-12 title-style">
                 <h2>{{ our_work_title }}</h2>
-                <h3>{{ our_work_subtitle }}</h3>
+                <br>
+                <br>
+                {{# <h3>{{ our_work_subtitle }}</h3> #}}
             </div>
             {{ partial:projects/project-list-layout }}
             <div class="col-12 mt-3 text-end">
@@ -47,18 +49,22 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-5 col-xs-12">
-                        {{ contact_us_description }}
-                        <form class="contactForm pt-5">
+                        {{# {{ contact_us_description }} #}}
+                        <form class="contactForm">
                             <div class="mb-3">
-                                <input class="form-control" type="text" placeholder="Your Name"
+                                <input class="form-control" type="text" placeholder="Name"
                                     aria-label="default input example">
                             </div>
                             <div class="mb-3">
-                                <input class="form-control" type="text" placeholder="Your Email"
+                                <input class="form-control" type="text" placeholder="Company"
                                     aria-label="default input example">
                             </div>
                             <div class="mb-3">
-                                <input class="form-control" type="text" placeholder="Your Phone"
+                                <input class="form-control" type="text" placeholder="Email"
+                                    aria-label="default input example">
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-control" type="text" placeholder="Phone"
                                     aria-label="default input example">
                             </div>
                             <div class="mb-3">

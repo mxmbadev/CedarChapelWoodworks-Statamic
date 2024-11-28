@@ -17,10 +17,10 @@ hero_buttons:
     type: new_set
     enabled: true
 updated_by: e140f39d-d1d3-46f7-9110-d69a85e4c78a
-updated_at: 1731644599
+updated_at: 1732761456
 hero_title: 'Welcome to Cedar Chapel Woodworks'
-hero_background_image: homepage/hero/studiobank.jpg
-our_work_title: 'Our Work'
+hero_background_image: homepage/hero/homepage-hero.jpg
+our_work_title: 'Featured Projects'
 our_work_subtitle: 'Explore our extensive portfolio of recent projects.'
 our_work_button_text: 'View All'
 our_work_button_url: /projects
@@ -44,7 +44,7 @@ about_button_text: 'Contact Us'
 about_button_url: '#contact-us'
 about_image: homepage/santos-rest-4.jpeg
 contact_us_title: 'Contact Us'
-contact_us_subtitle: 'Get In Touch With Us'
+contact_us_subtitle: 'Let’s talk about your next project.'
 contact_us_description:
   -
     type: paragraph
