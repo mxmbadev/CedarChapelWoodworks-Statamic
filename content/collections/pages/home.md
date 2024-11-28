@@ -6,8 +6,8 @@ template: home
 hero_buttons:
   -
     id: m3f84ve2
-    hero_button_text: 'Recent Projects'
-    hero_button_url: '#recent-work'
+    hero_button_text: 'View Portfolio'
+    hero_button_url: /projects
     type: new_set
     enabled: true
   -
@@ -17,8 +17,8 @@ hero_buttons:
     type: new_set
     enabled: true
 updated_by: e140f39d-d1d3-46f7-9110-d69a85e4c78a
-updated_at: 1732761456
-hero_title: 'Welcome to Cedar Chapel Woodworks'
+updated_at: 1732809618
+hero_title: 'Custom Woodwork That Defines Your Space.'
 hero_background_image: homepage/hero/homepage-hero.jpg
 our_work_title: 'Featured Projects'
 our_work_subtitle: 'Explore our extensive portfolio of recent projects.'
