@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="{{ company:company_logo }}" alt="{{ company:company_logo:alt }}" class="img-fluid"></a>
+        <a class="navbar-brand" href="{{ homepage }}"><img src="{{ company:company_logo }}" alt="{{ company:company_logo:alt }}" class="img-fluid"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -10,7 +10,7 @@
                 {{ nav:collection:pages include_home="true" }}
                 <li class="nav-item">
                     <a class="nav-link {{ is_current ?= 'active' }}" aria-current="page"
-                        href="{{ url }}">{{ title }}</a>
+                        href="{{ url }}">{{ title == "Projects" ? "Portfolio" : title }}</a>
                 </li>
                 {{ /nav:collection:pages }}
                 <li class="nav-item">
