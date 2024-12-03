@@ -17,9 +17,9 @@ hero_buttons:
     type: new_set
     enabled: true
 updated_by: e140f39d-d1d3-46f7-9110-d69a85e4c78a
-updated_at: 1732809618
-hero_title: 'Custom Woodwork That Defines Your Space.'
-hero_background_image: homepage/hero/homepage-hero.jpg
+updated_at: 1733202142
+hero_title: 'Architectural Millwork and Commercial Casework'
+hero_background_image: homepage/hero/homepage-hero4.jpg
 our_work_title: 'Featured Projects'
 our_work_subtitle: 'Explore our extensive portfolio of recent projects.'
 our_work_button_text: 'View All'

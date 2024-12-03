@@ -14,7 +14,7 @@ nav.navbar {
     padding: 0px; 
     .navbar-brand {
         color: var(--nav-text-color);
-        img { max-width: 150px !important; }
+        img { max-width: 70% !important; transition: all ease-in-out .3s;}
     }
     .nav-item {
         color: var(--nav-text-color);
@@ -26,6 +26,7 @@ nav.navbar {
         box-shadow: var(--light-gray) 0px 0px 8px 0px;
         .navbar-brand {
             color: #000;
+            img { max-width: 150px !important; transition: all ease-in-out .3s; }
         }
         .nav-item {
             .nav-link { color: #000; transition: all ease-in-out .2s; }
@@ -71,7 +72,6 @@ nav.navbar {
 }
 
 
-
 .btn-cta {
     color: #fff;
     background-color: var(--main-red-color);
@@ -112,6 +112,9 @@ nav.navbar {
     h1 {
         color: #fff;
         font-size: 75px;
+        @media (min-width: 992px){
+            width: 60%;
+        }
     }
 }
 
