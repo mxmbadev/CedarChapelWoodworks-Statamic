@@ -52,7 +52,7 @@
                 <div class="row">
                     <div class="col-lg-5 col-xs-12">
                         {{# {{ contact_us_description }} #}}
-                        {{# <form class="contactForm">
+                        <form class="contactForm">
                             <div class="mb-3">
                                 <input class="form-control" type="text" placeholder="Name"
                                     aria-label="default input example">
@@ -76,8 +76,8 @@
                             <div class="mb-3">
                                 <a href="" class="btn btn-cta">Submit</a>
                             </div>
-                        </form> #}}
-                        {{ form:contact_us }}
+                        </form>
+                        {{# {{ form:contact_us }}
                         {{ if success }}
                         <div class="bg-green-300 text-white p-2">
                             {{ success }}
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                         {{ /if }}
-                        {{ /form:contact_us }}
+                        {{ /form:contact_us }} #}}
                     </div>
                     <div class="col-lg-6 col-xs-12 offset-lg-1"
                         style="background-image: url('{{ contact_us_background_image }}');">
