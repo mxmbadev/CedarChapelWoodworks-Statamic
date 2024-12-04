@@ -52,7 +52,7 @@
                 <div class="row">
                     <div class="col-lg-5 col-xs-12">
                         {{# {{ contact_us_description }} #}}
-                        <form class="contactForm">
+                        {{# <form class="contactForm">
                             <div class="mb-3">
                                 <input class="form-control" type="text" placeholder="Name"
                                     aria-label="default input example">
@@ -76,7 +76,38 @@
                             <div class="mb-3">
                                 <a href="" class="btn btn-cta">Submit</a>
                             </div>
-                        </form>
+                        </form> #}}
+                        {{ form:contact_us }}
+                        {{ if success }}
+                        <div class="bg-green-300 text-white p-2">
+                            {{ success }}
+                        </div>
+                        {{ else }}
+                        {{ if errors }}
+                        <div class="bg-red-300 text-white p-2">
+                            {{ errors }}
+                            {{ value }}<br>
+                            {{ /errors }}
+                        </div>
+                        {{ /if }}
+                        {{ fields }}
+                        <div class="row">
+                            <div class="col-sm-12 p-2">
+                                <div class="p-1 form-fields">{{ field }}</div>
+                                {{ if error }}
+                                <p class="text-gray-500">{{ error }}</p>
+                                {{ /if }}
+                            </div>
+                        </div>
+                        {{ /fields }}
+                        <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-cta" type="submit">Submit</button>
+                            </div>
+                        </div>
+                        {{ /if }}
+                        {{ /form:contact_us }}
                     </div>
                     <div class="col-lg-6 col-xs-12 offset-lg-1"
                         style="background-image: url('{{ contact_us_background_image }}');">

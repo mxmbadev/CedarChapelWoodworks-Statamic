@@ -1,0 +1,43 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              placeholder: Name
+              antlers: true
+              type: text
+              display: Name
+          -
+            handle: company
+            field:
+              placeholder: Company
+              antlers: true
+              type: text
+              display: Company
+          -
+            handle: email
+            field:
+              input_type: email
+              placeholder: Email
+              antlers: true
+              type: text
+              display: Email
+          -
+            handle: phone_number
+            field:
+              input_type: tel
+              antlers: true
+              type: text
+              display: 'Phone Number'
+              placeholder: Number
+          -
+            handle: additional_information
+            field:
+              placeholder: 'Additional Information'
+              antlers: true
+              type: textarea
+              display: 'Additional Information'
