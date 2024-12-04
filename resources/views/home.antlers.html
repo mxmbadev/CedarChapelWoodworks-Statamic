@@ -52,7 +52,7 @@
                 <div class="row">
                     <div class="col-lg-5 col-xs-12">
                         {{# {{ contact_us_description }} #}}
-                        <form class="contactForm" netlify>
+                        <form class="contactForm" name="contactForm" method="POST" netlify>
                             <div class="mb-3">
                                 <input class="form-control" type="text" placeholder="Name"
                                     aria-label="default input example">
@@ -62,19 +62,19 @@
                                     aria-label="default input example">
                             </div>
                             <div class="mb-3">
-                                <input class="form-control" type="text" placeholder="Email"
+                                <input class="form-control" type="email" placeholder="Email"
                                     aria-label="default input example">
                             </div>
                             <div class="mb-3">
-                                <input class="form-control" type="text" placeholder="Phone"
+                                <input class="form-control" type="tel" placeholder="Phone"
                                     aria-label="default input example">
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                <textarea class="form-control" id="contactFormTextArea"
                                     placeholder="Additional Information" rows="3"></textarea>
                             </div>
                             <div class="mb-3">
-                                <a href="" class="btn btn-cta">Submit</a>
+                                <button class="btn btn-cta">Submit</button>
                             </div>
                         </form>
                         {{# {{ form:contact_us }}
