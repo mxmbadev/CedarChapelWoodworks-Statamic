@@ -134,6 +134,7 @@ section#about-us {
         background-position: 50% 30%;
         min-height: 400px;
     }
+    .about-text p strong{ color: var(--main-red-color); }
     @media (max-width: 991px) {
         padding-bottom: 0px !important;
 
@@ -188,22 +189,18 @@ section#projects-hero {
         .col-xl-4, .col-md-6, .col-xs-12 {
           padding-bottom: 1rem;
           margin-bottom: 0.5rem;
-  
           .project-link {
             display: block;
             position: relative;
             text-decoration: none;
-  
             .image-container {
               position: relative;
-  
               .project-image {
                 width: 100%;
                 height: auto;
                 display: block;
                 transition: transform 0.3s ease;
               }
-  
               .overlay {
                 position: absolute;
                 top: 0;
@@ -217,7 +214,6 @@ section#projects-hero {
                 justify-content: center;
                 opacity: 1;
                 padding: 1rem;
-  
                 .title-overlay {
                   color: #ffffff;
                   font-size: 1.5rem;
@@ -225,17 +221,14 @@ section#projects-hero {
                   text-align: center;
                   margin-bottom: 1rem;
                 }
-  
                 .view-project-btn {
                   display: none;
                 }
               }
-  
               &:hover {
                 .project-image {
                   transform: scale(1.05);
                 }
-  
                 .view-project-btn {
                   display: inline-block;
                 }

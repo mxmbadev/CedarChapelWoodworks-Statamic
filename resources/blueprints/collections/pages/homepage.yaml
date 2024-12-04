@@ -117,6 +117,19 @@ tabs:
               remove_empty_nodes: false
               type: bard
               display: 'About Paragraph'
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - codeblock
           -
             handle: about_button_text
             field:

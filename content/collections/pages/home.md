@@ -17,7 +17,7 @@ hero_buttons:
     type: new_set
     enabled: true
 updated_by: e140f39d-d1d3-46f7-9110-d69a85e4c78a
-updated_at: 1733202142
+updated_at: 1733290727
 hero_title: 'Architectural Millwork and Commercial Casework'
 hero_background_image: homepage/hero/homepage-hero4.jpg
 our_work_title: 'Featured Projects'
@@ -32,14 +32,37 @@ about_paragraph:
     content:
       -
         type: text
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in massa tempor nec feugiat nisl pretium. Nec feugiat nisl pretium fusce id velit.'
-      -
-        type: hardBreak
-      -
-        type: hardBreak
+        text: "What started from humble beginnings has grown into a premier Architectural Millwork and Cabinetry company located near Nashville, TN.\_\_Using a mix of time-honored woodworking craftsmanship and the latest in CNC technology, "
       -
         type: text
-        text: 'Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. Porta lorem mollis aliquam ut porttitor leo a diam. Placerat orci nulla pellentesque dignissim enim sit amet venenatis urna. Sit amet est placerat in. Odio ut sem nulla pharetra diam sit. Aliquam faucibus purus in massa tempor nec feugiat. Eget duis at tellus at. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Adipiscing tristique risus nec feugiat in fermentum posuere. Lectus magna fringilla urna porttitor. Urna nunc id cursus metus aliquam eleifend mi in nulla. Aliquet bibendum enim facilisis gravida neque. Sollicitudin nibh sit amet commodo. Donec ultrices tincidunt arcu non sodales neque sodales ut. Sit amet risus nullam eget felis eget nunc lobortis. Accumsan in nisl nisi scelerisque eu. Mi sit amet mauris commodo quis imperdiet. Neque aliquam vestibulum morbi blandit.'
+        marks:
+          -
+            type: bold
+        text: 'Cedar Chapel Woodworks'
+      -
+        type: text
+        text: ' has continued to excel in producing quality projects with exceptional results. Whether your project is in the conceptual stages or ready to start immediately; we offer turn-key solutions to see your project through to completion.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Together with architects, designers, and contractors, '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Cedar Chapel Woodworks'
+      -
+        type: text
+        text: ' is your woodworking solution.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Let’s talk about your next project.'
 about_button_text: 'Contact Us'
 about_button_url: '#contact-us'
 about_image: homepage/santos-rest-4.jpeg
